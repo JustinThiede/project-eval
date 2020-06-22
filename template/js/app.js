@@ -19,7 +19,7 @@ $(function(){
         if ($('.recordset').length > 1) {
             $(this).parents('.recordset').remove();
         } else {
-            alert('Es muss mindestens ein Datensatz erstellt werden.');
+            alert('Atleast one dataset needs to be created.');
         }
     }
 });

@@ -16,38 +16,38 @@
     </head>
     <body>
         <form action="template/php/createDiagram.php" method="post">
-            <input type="hidden" name="estimatedEffort[]" value="Geschätzter Aufwand" hidden>
-            <input type="hidden" name="timeSpent[]" value="Aufgewendete Zeit" hidden>
+            <input type="hidden" name="estimatedEffort[]" value="Estimated effort" hidden>
+            <input type="hidden" name="timeSpent[]" value="Effort" hidden>
             <div class="col-5">
                 <label>
-                    <input type="text" name="project" placeholder="Projekt" required>
+                    <input type="text" name="project" placeholder="Project" required>
                 </label>
             </div>
             <br>
             <div class="recordset">
                 <div class="col-5">
                     <label>
-                        <input type="number" name="ticketId[]" placeholder="Ticketnummer" required />
+                        <input type="number" name="ticketId[]" placeholder="Ticket number" required />
                     </label>
                 </div>
                 <div class="col-5">
                     <label>
-                        <input type="text" name="description[]" placeholder="Thema" required />
+                        <input type="text" name="description[]" placeholder="Description" required />
                     </label>
                 </div>
                 <div class="col-5">
                     <label>
-                        <input type="text" name="assignedTo[]" placeholder="Zugewiesen an" required>
+                        <input type="text" name="assignedTo[]" placeholder="Assigned to" required>
                     </label>
                 </div>
                 <div class="col-5">
                     <label>
-                        <input type="number" name="estimatedEffort[]" placeholder="Geschätzter Aufwand" step="0.01" required>
+                        <input type="number" name="estimatedEffort[]" placeholder="Estimated effort" step="0.01" required>
                     </label>
                 </div>
                 <div class="col-5">
                     <label>
-                        <input type="number" name="timeSpent[]" placeholder="Aufgewendete Zeit" step="0.01" required>
+                        <input type="number" name="timeSpent[]" placeholder="Effort" step="0.01" required>
                     </label>
                 </div>
                 <div class="col-5">
@@ -60,7 +60,7 @@
                 <img src="template/img/add.png" class="add">
             </div>
             <div class="col-submit">
-                <button type="submit">Diagramm erstellen</button>
+                <button type="submit">Create diagram</button>
             </div>
         </form>
         <script

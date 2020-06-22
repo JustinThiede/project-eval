@@ -37,7 +37,7 @@ $headerQuantity = 0; // Amount of headers
 
 // Create header array and set its starting and ending cells
 foreach ($ticketId as $index => $id) {
-    $text     = 'Thema: <b>' . $description[$index] . '</b><br>Ticket: <b>#' . $id . '</b><br>Zugewiesen an: <b>' . $assignedTo[$index] . '</b>';
+    $text     = 'Description: <b>' . $description[$index] . '</b><br>Ticket: <b>#' . $id . '</b><br>Assigned to: <b>' . $assignedTo[$index] . '</b>';
     $richText = $htmlHelper->toRichTextObject($text);
 
     array_push($header, $richText);
@@ -108,7 +108,7 @@ $chart->setTopLeftPosition('D9');
 $chart->setBottomRightPosition('K22');
 
 $worksheet->addChart($chart); // Add the chart to the worksheet
-$filename = 'auswertung_aufwaende';
+$filename = 'project_eval';
 $writer   = IOFactory::createWriter($spreadsheet, 'Xlsx');
 $writer->setIncludeCharts(true);
 
