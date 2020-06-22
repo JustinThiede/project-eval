@@ -99,9 +99,8 @@ $chart    = new Chart(
     $plotArea,
     true,
     0,
-    null,
-    null
 ); // Create the chart
+
 
 // Set the position where the chart should appear in the worksheet
 $chart->setTopLeftPosition('D9');

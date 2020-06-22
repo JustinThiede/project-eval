@@ -29,7 +29,7 @@ class Axis extends Properties
         'minimum' => null,
         'maximum' => null,
         'major_unit' => null,
-        'minor_unit' => null,
+        'minor_unit' => 1,
         'orientation' => self::ORIENTATION_NORMAL,
         'minor_tick_mark' => self::TICK_MARK_NONE,
         'major_tick_mark' => self::TICK_MARK_NONE,
